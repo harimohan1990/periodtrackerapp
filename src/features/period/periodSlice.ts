@@ -3,9 +3,8 @@ import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 type PeriodEntry = {
   startDate: string;
   endDate: string;
-  symptoms?: string[];
+  mood?: string;
 };
-
 interface PeriodState {
   entries: PeriodEntry[];
 }

@@ -10,15 +10,15 @@ const PeriodList: React.FC = () => {
 
   const handleDownload = () => {
     // CSV header
-    const headers = ["Start Date", "End Date", "Symptoms"];
+    const headers = ["Start Date", "End Date", "Mood"];
     
-    // Convert periods to CSV format
+    // Convert periods to CSV format, including mood
     const csvRows = [
       headers.join(','),  // Header row
-      ...periods.map(period => [
+      ...periods.map((period) => [
         period.startDate,
         period.endDate,
-        period.symptoms ? period.symptoms.join('; ') : ''
+        period.mood // Including mood in the CSV row
       ].join(','))
     ];
 
@@ -38,8 +38,20 @@ const PeriodList: React.FC = () => {
       <h2>Logged Periods</h2>
       <ul>
         {periods.map((entry, idx) => (
-          <li key={idx} className="list-item">
+          <li key={idx} className={`list-item mood-${entry.mood}`}>
             <span>{entry.startDate} → {entry.endDate}</span>
+            <span className={`mood-icon mood-${entry.mood}`}>
+              {entry.mood === 'happy' ? '😊' :
+               entry.mood === 'sad' ? '😢' :
+               entry.mood === 'tired' ? '😴' :
+               entry.mood === 'angry' ? '😠' :
+               entry.mood === 'normal' ? '🙂' :
+               entry.mood === 'stressed' ? '😓' :
+               entry.mood === 'relaxed' ? '😌' :
+               entry.mood === 'moody' ? '😤' :
+               entry.mood === 'energetic' ? '💪' :
+               '🍫'}
+            </span>
             <button onClick={() => dispatch(deletePeriod(idx))}>Delete</button>
           </li>
         ))}
