@@ -1,0 +1,63 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, #ff7f50, #c83f9c); /* Linear gradient background */
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  background: linear-gradient(to top right, #ffffff, #f8d9e0); /* Subtle gradient for the container */
+  border-radius: 12px; /* Slightly increased border-radius */
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1); /* Soft shadow for a modern look */
+  text-align: center;
+  color: #4a4a4a; /* Set text color to dark gray for readability */
+}
+
+h1 {
+  text-align: center;
+  color: #c83f9c; /* Soft pink color for title */
+  font-size: 36px; /* Larger font size for a more prominent heading */
+  font-weight: 600;
+}
+
+.intro {
+  margin-bottom: 24px;
+  line-height: 1.8; /* Increased line height for better readability */
+  font-size: 16px;
+  color: #4a4a4a; /* Dark gray for better contrast and readability */
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  .intro {
+    font-size: 15px;
+    margin-bottom: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 12px;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  .intro {
+    font-size: 14px;
+    margin-bottom: 12px;
+  }
+}

@@ -1,0 +1,121 @@
+.list {
+    padding: 20px;
+    background: linear-gradient(to bottom, #ffb6c1, #e4a1d9); /* Soft pink gradient */
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .list h2 {
+    margin-bottom: 20px;
+    color: #ff7b9f; /* Soft warm pink for headings */
+    font-size: 28px;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+  }
+  
+  .list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .list-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px;
+    border: 1px solid #ff85a2; /* Light pink border */
+    border-radius: 12px;
+    margin-bottom: 16px;
+    background: linear-gradient(to right, #fff, #ffccd6); /* Gradient background for list items */
+    transition: background 0.3s ease, transform 0.3s ease;
+  }
+  
+  .list-item:hover {
+    background: linear-gradient(to right, #f8a1b4, #ffb3c1); /* Subtle hover effect */
+    transform: translateY(-5px); /* Slight hover effect for better interaction feel */
+  }
+  
+  .list-item span {
+    font-size: 18px;
+    color: #5a5a5a;
+    font-weight: 500;
+  }
+  
+  .list-item button {
+    background-color: #ff8f99; /* Soft pink for button */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .list-item button:hover {
+    background-color: #f76a88; /* Darker pink on hover */
+    transform: scale(1.05); /* Slight scale effect on hover */
+  }
+  
+  .download-button {
+    background-color: #ff74b2; /* Soft pink button */
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 600;
+    margin-top: 20px;
+    display: block;
+    width: 100%;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .download-button:hover {
+    background-color: #f25e7f; /* Darker pink on hover */
+    transform: scale(1.05); /* Slight scale effect on hover */
+  }
+  
+  @media (max-width: 768px) {
+    .list {
+      padding: 15px;
+    }
+  
+    .list-item {
+      padding: 16px;
+      font-size: 16px;
+    }
+  
+    .list-item button {
+      padding: 8px 18px;
+    }
+  
+    .download-button {
+      font-size: 14px;
+      padding: 12px 20px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .list {
+      padding: 12px;
+    }
+  
+    .list-item {
+      padding: 14px;
+      font-size: 14px;
+    }
+  
+    .list-item button {
+      padding: 6px 14px;
+    }
+  
+    .download-button {
+      font-size: 12px;
+      padding: 10px 18px;
+    }
+  }
+  
