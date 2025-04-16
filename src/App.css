@@ -17,7 +17,12 @@ body {
   text-align: center;
   color: #4a4a4a; /* Set text color to dark gray for readability */
 }
-
+.heading{
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 10px;
+  font-weight: 600;
+}
 h1 {
   text-align: center;
   color: #c83f9c; /* Soft pink color for title */

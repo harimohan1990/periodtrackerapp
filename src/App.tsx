@@ -6,7 +6,7 @@ import './App.css';
 const App: React.FC = () => {
   return (
     <div className="container">
-    <h1>Period Menstruation Tracker</h1>
+    <h1 className='heading'>Period Menstruation Tracker</h1>
     <p className="intro">
       🌸 Understanding Menstruation: A Natural Part of Life<br/>
       Menstruation, or a period, is a normal and healthy part of the reproductive cycle. It happens when the uterus sheds its lining if pregnancy doesn’t occur.<br/><br/>
