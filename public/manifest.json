@@ -1,24 +1,15 @@
 {
-    "short_name": "Period Tracker",
-    "name": "Period Tracking App",
-    "description": "A simple app to track period dates and moods",
-    "icons": [
-      {
-        "src": "1.png",
-        "sizes": "192x192",
-        "type": "image/png"
-      },
-      {
-        "src": "2.png",
-        "sizes": "512x512",
-        "type": "image/png"
-      }
-    ],
-    "start_url": ".",
-    "background_color": "#ffffff",
-    "theme_color": "#ff77a9",
-    "display": "standalone",
-    "orientation": "portrait",
-    "scope": "/"
-  }
-  
+  "short_name": "MyPWA",
+  "name": "My Progressive Web App",
+  "icons": [
+    {
+      "src": "icon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

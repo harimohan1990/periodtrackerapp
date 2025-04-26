@@ -1,3 +1,12 @@
+interface ImportMetaEnv {
+  readonly MODE: string;
+  readonly VITE_PUBLIC_URL: string;
+}
+
+interface ImportMeta {
+  readonly env: ImportMetaEnv;
+}
+
 const isLocalhost = Boolean(
     window.location.hostname === 'localhost' ||
     window.location.hostname === '[::1]' ||
@@ -10,7 +19,7 @@ const isLocalhost = Boolean(
     if (import.meta.env.MODE === 'production' && 'serviceWorker' in navigator) {
       console.log("In production, registering service worker");
   
-      const swUrl = `${import.meta.env.VITE_PUBLIC_URL}/service-worker.js`;
+      const swUrl = new URL('service-worker.js', import.meta.env.VITE_PUBLIC_URL).toString();
       const publicUrl = new URL(import.meta.env.VITE_PUBLIC_URL, window.location.href);
   
       console.log('Public URL:', publicUrl.href);
